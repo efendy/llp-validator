@@ -1,0 +1,26 @@
+<div class="dropdown-container">
+  <mat-form-field>
+    <mat-label>First Dropdown</mat-label>
+    <mat-select [(ngModel)]="selectedItem" (selectionChange)="onFirstDropdownChange()">
+      <mat-option *ngFor="let item of firstDropdownItems" [value]="item.value">
+        {{ item.label }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div class="gap"></div> <!-- Add a div for gap -->
+
+  <mat-form-field>
+    <mat-label>Second Dropdown</mat-label>
+    <mat-select [(ngModel)]="selectedSubItem">
+      <mat-option *ngFor="let subItem of filteredSecondDropdownItems" [value]="subItem.value">
+        {{ subItem.label }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="textarea-container"> <!-- Container for textarea and button -->
+  <textarea matInput [(ngModel)]="textInput" placeholder="Enter text"></textarea>
+  <button mat-button (click)="onButtonClick()">Submit</button>
+</div>

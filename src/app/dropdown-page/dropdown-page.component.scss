@@ -1,0 +1,28 @@
+/* dropdown-page.component.scss */
+
+/* Container for dropdowns */
+.dropdown-container {
+  display: flex; /* Use flexbox */
+}
+
+/* Add a gap between the dropdowns */
+.gap {
+  width: 16px; /* Adjust as needed */
+}
+
+/* Container for textarea and button */
+.textarea-container {
+  margin-top: 16px; /* Add space between dropdowns and textarea */
+}
+
+/* Style for textarea */
+textarea {
+  width: 100%;
+  height: 100px; /* Adjust height as needed */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+/* Style for button */
+button {
+  margin-top: 16px; /* Add space between textarea and button */
+}
